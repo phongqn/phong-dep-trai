@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Nhóm selector về form</title>
+  </head>
+  <body>
+    <style>
+      form * {
+        display: block;
+        margin-bottom: 10px auto;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        //1. Đếm số input trên form
+        var num_input = $("form :input").length;
+        // alert(num_input);
+        //2. input text chuyển sang background red
+        $("form :text").css("border", "1px solid red");
+        //3. đếm số lượng phần tử select đã được chọn
+        var num_select = $("form select :selected");
+        num_select.each(function () {
+      //    alert($(this).text());
+        });
+        var input_checkbox_checked = $("form .hobby:checked ");
+        input_checkbox_checked.each(function () {
+          alert($(this).val());
+        });
+      });
+    </script>
+    <form action="">
+      <input type="text" />
+      <input type="password" />
+      <input type="checkbox" class="hobby"  name="hobby" value="game" />
+      <input type="checkbox" class="hobby" name="hobby" value="shopping" checked="checked" />
+      <input type="checkbox"class="hobby" name="hobby" value="read_book" checked="checked" />
+      <input type="radio" />
+      <textarea name="" id="" cols="50" rows="10"></textarea>
+      <button>Nút Bấm</button>
+      <input type="submit" name="Nút" />
+      <input type="file" />
+      <select name="" id="">
+        <option value="">Lựa chọn</option>
+        <option value="">Php</option>
+        <option select="selected">jquery</option>
+      </select>
+    </form>
+  </body>
+</html>

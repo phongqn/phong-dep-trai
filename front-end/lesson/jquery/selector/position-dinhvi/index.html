@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Nhóm selector theo định vị</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        //.1 Đị theo index: chọn phần tử p có chỉ số 1 thành màu đỏ
+        $("p:eq(1)").css("color", "red");
+        //.2 chọn phần tử p đầu tiên => cho green
+        $("p:first").css("color", "green");
+        //.3 chọn phần tử p cuối => cho blue
+        $("p:last").css("color", "blue");
+        //.4 chọn phần tử p có chỉ số lơn hơn 1 => yellow
+        $("p:gt(1)").css("color", "yellow");
+        // muốn chọn thằng thứ 8 mà tất cả không liên quan thì ta cần và cho vào div box rồi thì chỉ số lại từ đầu
+        $("div.box p:eq(1)").css("color", "black");
+        //.5 chọn phần tử p có chỉ số bé hơn 3 màu #f3d
+        $("p:lt(3)").css("color", "#f3d");
+        //6. chọn phần p  tử chỉ số lẻ sang màu #ff1312
+        $("p:odd").css("color", "#ff1312");
+        //7. chọn phần p  tử chỉ số chẵn sang màu blue
+        $("p:even").css("color", "blue");
+        //8.chọn tất cả phần tử p ngoài trừ chỉ số 2 màu => gray
+        $("p:not('p:eq(2)')").css("color", "gray")
+      });
+    </script>
+    <p>Đoạn văn 0</p>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <div class="box">
+      <p>Đoạn văn 7</p>
+      <p>Đoạn văn 8</p>
+      <p>Đoạn văn 9</p>
+    </div>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+  </body>
+</html>

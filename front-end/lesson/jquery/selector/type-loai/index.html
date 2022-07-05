@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Nhóm selector lọc theo loại</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        //1 tìm thẻ a đầu tiên
+        $(".box a:first-of-type").css("color", "red");
+        //2. tìm thẻ p cuối cùng 
+        $(".box h2:last-of-type").css("color", "blue");
+        //3. chọn h2 mà nó chỉ nằm 1 mình nó thôi trong 1 cái div khác
+        $(".box h2:only-of-type").css("color", "yellow");
+      });
+    </script>
+    <div class="box">
+      <a href="">Link 1</a>
+
+      <p>Văn bản 1</p>
+      <h2>Tiêu đề 1</h2>
+      <a href="">Link 2</a>
+      <p>Văn bản 2</p>
+      <h2>Tiêu đề 2</h2>
+      <a href="">Link 3</a>
+      <p>Văn bản 3</p>
+      <h2>Tiêu đề 3</h2>
+    </div>
+    <div class="box">
+        <h2>tiêu đề 4</h2>
+    </div>
+  </body>
+</html>
