@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class selector</title>
+</head>
+<body>
+    <!-- ------chúng ta khai báo nhãn ví du muốn căn giữa thì chúng ta khai báo nhãn .text-center rồi khai báo class cho từng phần tử chúng ta muốn thay đổi hiển thị ----- -->
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .text-red{
+            color: red;
+        }
+    </style>
+    <h1>Class selector</h1>
+    <p class="text-center text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quisquam?</p>
+    <!-- dùng chung cho nhiều đối tượng k cần viết thêm class chỉ cần__cách nó ra rồi viết thêm thuộc tính vào là được như thẻ p đầu tiên -->
+    <p class="text-red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae excepturi, sit adipisci fuga unde rerum hic provident perferendis minima reiciendis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quisquam?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae excepturi, sit adipisci fuga unde rerum hic provident perferendis minima reiciendis!</p>
+    <p class="text-red" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quisquam?</p>
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae excepturi, sit adipisci fuga unde rerum hic provident perferendis minima reiciendis!</p>
+</body>
+</html>

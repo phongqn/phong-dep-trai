@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+</head>
+<body>
+    <!-- trường hợp 1:kích thước nở ra khi sử dụng padding,border 
+    box-sizing:content-box;
+    khi có padding hay border nó sẽ tự dãn ra bên ngoài vì kích thước là không cố định
+    trường hợp 2:kích thước khối không thay đổi khi sử dụng padding,border
+    box-sizing: border-box;
+    khi có padding hay border nó sẽ tự đẩy vào bên trong vì kích thước là cố định
+    cách tính trường hợp 1
+    ta có vị dụ:
+    box-1{
+        width: 400px;
+        height: 200px;
+        padding: 15px;
+        border: 2px solid #f00;
+        margin-bottom: 20px;
+        width box:400px+15px*2+2px*2=434px
+        height box:200px+15px*2+2px*2=234px -->
+        <style> 
+        .box-1{
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .box-2{
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+        }
+    </style>
+    <h1>Box sizing</h1>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem distinctio dolores magni fugiat optio voluptatem alias in! Cupiditate quas impedit veniam, debitis aspernatur nihil maiores harum. Exercitationem quam vitae dolore?</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur maiores eligendi quasi atque suscipit distinctio a officia incidunt nam doloribus, autem et porro modi minima totam soluta vel. Asperiores, quaerat.</p>
+    </div>
+</body>
+</html>

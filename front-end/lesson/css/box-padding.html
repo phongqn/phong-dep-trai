@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box padding</title>
+</head>
+<body>
+    <!-- cấu trúc:
+    padding:value;
+    padding-{side}:value;
+    có giá trị và xếp heo thứ tự là : trên,trái,dưới,phải
+        padding-top:
+        padding-left:
+        padding-bottom:
+         padding-right:
+         ví dụ: viết theo kiểu 4,3,2,1 tham số có tham số là:10px,20px,10px,20px
+         kiểu 4 tham số: 
+         padding: 10px 20px 10px 20px
+         kiểu 2 tham số:nếu 2 cạnh đối diện nhau mà bằng nhau thì ta viết 1 cạnh thì  nó tự hiểu cạnh còn lại là:
+         padding:10px 20px;
+         còn nếu tất padding xung quanh giống nhau thì ta ghi 1 tham số: 
+         padding:10px;
+         phục vụ cho padding có tính chất lặp đi lặng lại
+        // nếu chúng ta thiết lập 1 class có chứng năng padding-top: 10px thì chúng ta tạo ra 1 class
+         .pt-20{
+            padding-top: 20px;
+        }
+     tác dụng:Thiết lập vùng đệm cho mọt đối tượng -->
+    <style>
+        .box{
+            width: 400px;
+            height:200px;
+            background:burlywood;
+           /* padding: 20px; */
+        }
+        .pt-20{
+            padding-top: 20px;
+        }
+        .pb-10{
+            padding-bottom: 10px;
+        }
+        .pl-20{
+            padding-left: 20px;
+        }
+        .p-20{
+            padding: 20px;
+        }
+    </style>
+    <h1>Box padding</h1>
+    <div class="box p-20">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, beatae. Non, quo voluptate? Obcaecati quae qui pariatur praesentium omnis soluta dolores, facere ipsam nostrum officiis voluptatem, maxime neque. Omnis, atque!</p>
+        
+    </div>
+    <div class="box p-20">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, beatae. Non, quo voluptate? Obcaecati quae qui pariatur praesentium omnis soluta dolores, facere ipsam nostrum officiis voluptatem, maxime neque. Omnis, atque!</p>
+        
+    </div>
+</body>
+</html>

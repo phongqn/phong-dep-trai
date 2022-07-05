@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Cú pháp viết jquery</title>
+  </head>
+  <body>
+    <h1>Cú pháp viêt jquery</h1>
+    <script>
+      $(document).ready(function () {
+        //#ví dụ 1
+        //thay đôi dữ liệu cho đối tượng nào => p (selector)
+        // thay đổi cái gì? => thay đổi text (method text jquery)
+        //  $('p').text('Im Nguyễn Quốc Phong')
+        //# ví dụ 2
+        //1.xuất ra họ
+        //selector: p.firstName
+        //action:text('Nguyễn Quốc')
+        $("p.firstName").text("Nguyễn Quốc");
+        //2.xuất ra tên
+        //selector: p.lastName
+        //action:text('Phong')
+        $("p.lastName").text("Phong");
+        $("p span.firstName").text("Nguyễn Quốc");
+        $("p span.lastName").text("Phong");
+      });
+    </script>
+    <!--ví dụ 1:  <p>Dữ liệu ban đầu</p>-->
+    <!-- đỏi dữ liệu ban đầu thành Im Nguyễn Quốc Phong -->
+    <p class="firstName">Họ......</p>
+    <p class="lastName">Tên....</p>
+    <p>Họ: <span class="firstName"></span></p>
+    <p>Tên: <span class="lastName"></span></p>
+  </body>
+</html>

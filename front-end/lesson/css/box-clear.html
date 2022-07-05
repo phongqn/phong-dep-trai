@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Clear</title>
+</head>
+<body>
+    <!-- tác dụng :huỷ bỏ một phần tử bên dưới lấp khoảng trống do phần tử bên trên sử dụng float để lại
+    cú pháp:clear:none;
+    clear value
+    value:none,left,right,both
+    không muốn phần tử bên dưới k leo bên trên mà muốn nó chỉ đứng im chỗ ấy -->
+    <style>
+        #wrapper{
+            width: 800px;
+            margin: 0 auto;
+        }
+        
+        .post-title{
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+        .post-thumb{
+            width: 200px;
+            display: block;
+            float: left;
+            padding-right: 15px;
+        }
+        .post-thumb img{
+            max-width: 100%;
+        }
+        .clear-both{
+            clear: both;
+        }
+        article{
+            margin-bottom: 25px;
+        }
+    </style>
+    
+    <div id="wrapper">
+        <h1>box-clear</h1>
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores!</a>
+            <a href="" class="post-thumb">       
+                <img src="images/cr7.jpg" alt="cr7">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est voluptatum dolores consequatur nulla minima sed ab porro veniam voluptas? Illum quaerat nesciunt numquam harum qui adipisci animi pariatur velit quos eveniet architecto, itaque mollitia, omnis ea temporibus. Deserunt culpa ratione nihil quidem quam voluptate quod repudiandae nobis quasi! Nulla reprehenderit neque dolore fugiat dolores mollitia molestiae, pariatur accusamus iure voluptatibus quod corporis laudantium tempora explicabo, odio nobis facere nostrum!
+            </p>
+            <div class="clear-both"></div>
+        </article>
+            <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores!</a>
+            <a href="" class="post-thumb">      
+                <img src="images/cr7.jpg" alt="cr7">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est voluptatum dolores consequatur nulla minima sed ab porro veniam voluptas? Illum quaerat nesciunt numquam harum qui adipisci animi pariatur velit quos eveniet architecto, itaque mollitia, omnis ea temporibus. Deserunt culpa ratione nihil quidem quam voluptate quod repudiandae nobis quasi! Nulla reprehenderit neque dolore fugiat dolores mollitia molestiae, pariatur accusamus iure voluptatibus quod corporis laudantium tempora explicabo, odio nobis facere nostrum!
+            </p>    
+            <div class="clear-both"></div>
+        </article>
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores!</a>
+            <a href="" class="post-thumb">       
+                <img src="images/cr7.jpg" alt="cr7">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est voluptatum dolores consequatur nulla minima sed ab porro veniam voluptas? Illum quaerat nesciunt numquam harum qui adipisci animi pariatur velit quos eveniet architecto, itaque mollitia, omnis ea temporibus. Deserunt culpa ratione nihil quidem quam voluptate quod repudiandae nobis quasi! Nulla reprehenderit neque dolore fugiat dolores mollitia molestiae, pariatur accusamus iure voluptatibus quod corporis laudantium tempora explicabo, odio nobis facere nostrum!
+            </p>
+            <div class="clear-both"></div>
+        </article>
+            <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolores!</a>
+            <a href="" class="post-thumb">      
+                <img src="images/cr7.jpg" alt="cr7">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est voluptatum dolores consequatur nulla minima sed ab porro veniam voluptas? Illum quaerat nesciunt numquam harum qui adipisci animi pariatur velit quos eveniet architecto, itaque mollitia, omnis ea temporibus. Deserunt culpa ratione nihil quidem quam voluptate quod repudiandae nobis quasi! Nulla reprehenderit neque dolore fugiat dolores mollitia molestiae, pariatur accusamus iure voluptatibus quod corporis laudantium tempora explicabo, odio nobis facere nostrum!
+            </p>    
+            <div class="clear-both"></div>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display block</title>
+  </head>
+  <body>
+    <!-- tác dụng:các phần tử có display block được hiển thị theo dạng khối.Độ rộng mặc định nó chiếm 
+    luôn không gian hàng ngang nó hiển thị
+    cú pháp:   display:block; -->
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0px auto;
+      }
+      .link-group a{
+      display: block;
+      background:red;
+      float: left;
+      padding: 5px 20px;
+      text-decoration: none;
+      border-right: 1px solid #ccc;   
+      }
+      .link-group a:hover{
+         background-color: aqua;
+      }
+    </style>
+    <div id="wrapper">
+      <h1>Display block</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam
+        fugiat vero culpa delectus sed consequatur, fugit corrupti cum accusamus
+        maxime eius qui inventore velit, a sapiente. Omnis, rem quam.
+      </p>
+      <div class="link-group">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+      </div>
+    </div>
+  </body>
+</html>

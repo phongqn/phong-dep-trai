@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex grow</title>
+</head>
+<body>
+    <!-- tác dụng:thuộc tính quyết định tỉ lệ nở ra của phàn tử flex-item so với không gian còn
+    dư của container
+   dùng để quyết định cái đối tượng chúng ta muốn nở ra,nở theo tỉ lệ bao nhiêu
+   cú pháp:flex-grow:value
+   value:1,2, 0,3  ,  0,7.. -->
+    <style> 
+        .container {
+            background-color: blanchedalmond;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            background-color:tomato;
+            padding: 30px;
+            width: 100px;
+            margin:10px;
+            flex-basis: auto;
+            font-size:18px;
+            text-align: center;
+            color: #fff;
+
+        }
+        .item-1{
+            flex-grow: 1;
+        }
+        .item-2{
+            flex-grow: 2;
+        }
+    </style>
+    <h1>Display flex grow</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+    </div>
+</body>
+</html>

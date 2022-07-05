@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display None</title>
+  </head>
+  <body>
+      <!-- tác dụng:dùng để ẩn một đối tượng trong site
+      cú pháp:display:none; 
+       khi muốn hiện nó ra sử dụng hover: -->
+      <style>
+          /* ul#main-menu{
+              display: none;
+          } */
+          ul.sub-menu{
+              display: none;
+          }
+          ul#main-menu li:hover ul.sub-menu{
+              display: block;
+
+          }
+      </style>
+    <h1>Display None</h1>
+    <ul id="main-menu">
+      <li><a href="">Trang chủ</a></li>
+      <li><a href="">Gioi Thiệu</a></li>
+      <li>
+        <a href="">Sản Phẩm</a>
+        <ul class="sub-menu">
+          <li><a href="">Gìay</a></li>
+          <li><a href="">Túi Sách</a></li>
+        </ul>
+      </li>
+      <li><a href="">Liên Hệ</a></li>
+    </ul>
+  </body>
+</html>

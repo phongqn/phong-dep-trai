@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over flow</title>
+</head>
+<body>
+    <!-- overflow là thuộc tính xử lý nội dung tràn khối
+    tác dụng:thuộc tính quyết định hiển thị kích thước vượt quá nội dung kích thước khối chưa nó
+    cú pháp:overflow;value;
+    value:visible,hidden,auto,scroll
+    overflow là đi những phần : hidden; là duư
+    overflow: scroll; sử dụng khi nếu chúng ta muốn đọc những phần ẩn đi thì dùng scroll
+    sẽ xuất hiện cả 2 thân quận bên phải và bên dưới
+    overflow: auto; sử dụng khi nếu chúng ta muốn đọc những phần ẩn đi thì dùng auto
+    sẽ xuất hiện thân quận bên phải
+    overflow: visible; là nguyên ban đầu -->
+
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #333;
+            padding:10px;
+            overflow: visible;
+        }
+    </style>
+    <h1>Over flow</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum suscipit quaerat unde distinctio voluptatibus, inventore exercitationem, nesciunt adipisci odio quis rerum a omnis explicabo officiis soluta? Sed at fugit porro, cumque expedita aliquid ea! Dolorem deserunt debitis a provident quod iusto quis quae asperiores commodi in, consequuntur quisquam obcaecati ex explicabo distinctio, reiciendis non, hic dicta. Quis voluptatem quae sint, autem ducimus nihil magni iure hic distinctio totam modi maiores, est dignissimos nobis excepturi illo sed dolorum voluptas eaque nostrum architecto esse! Dolores aliquam placeat beatae ipsum. Dolores, inventore possimus perspiciatis, tempora quis repellat illum exercitationem officiis culpa adipisci rerum?</p>
+    </div>
+</body>
+</html>

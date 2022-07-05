@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css-ex3</title>
+  </head>
+  <body>
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0px auto;
+      }
+      #header {
+        padding: 15px;
+        color: white;
+        background-color: green;
+        text-align: center;
+      }
+      #footer {
+        padding: 10px 0px;
+        color: white;
+        background-color: green;
+        text-align: center;
+      }
+      #content {
+        width: 600px;
+        min-height: 600px;
+        background-color: #f3f3f3;
+        float: left;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      #sidebar {
+        width: 360px;
+        min-height: 600px;
+        background-color: rgb(224, 224, 233);
+        float: left;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      /*----dùng để chống sập độ cao---- */
+      .clearfix::after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+      .clearfix {
+        clear: both;
+        display: block;
+      }
+      /*----dùng để chống sập độ cao---- */
+    </style>
+    <div id="wrapper">
+      <div id="header">Layout web 2 Cột-Float Css</div>
+      <div id="wp-content" class="clearfix">
+        <div id="content">Content</div>
+        <div id="sidebar">Sidebar</div>
+      </div>
+      <div id="footer">unitop.vn</div>
+    </div>
+  </body>
+</html>

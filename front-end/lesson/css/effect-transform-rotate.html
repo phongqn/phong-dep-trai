@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform rotate</title>
+</head>
+<body>
+    <!-- tác dụng:giúp xoay phần tử với một góc cho trước
+    cú pháp:transform:rotate(value)
+    value:20deg,120deg
+    đi kèm với thuộc tính transition đễ thấy rõ hơn khi xoay -->
+
+    <style>
+        .box{
+            height:100px;
+            width:200px;
+            background-color:tomato;
+            transition: all 0.5s;
+           
+        }
+        .box:hover{
+            transform:rotate(180deg);        }
+    </style>
+    <h1>Tranform rotate</h1>
+    <div class="box">box</div>
+</body>
+</html>

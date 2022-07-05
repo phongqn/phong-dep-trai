@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroud repat</title>
+</head>
+<body>
+    <!-- tác dụng:thiết lập tính lặp lại của hình nền trong trường hợp kích thước
+    hình nền nhỏ hơn khối
+    cấu trúc:background-repeat: values;
+    giá trị có:
+    no-repeat: là không lặp lại
+    repeat-x:theo chiều ngang
+    repeat-y:theo chiều dọc
+    repat: đi lần lượt từ trên xuống dưới,từ trái sang phải đến khi nào phù hợp thôi -->
+    <style>
+        #wrapper{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .box{
+            background-color:rgb(62, 172, 41);
+            min-height:300px ;
+            background-image: url("images/facebook.png");
+            background-size:80px;
+            background-repeat:no-repeat;
+        }
+    </style>
+    
+    <div id="wrapper">
+        <h1>Backgroud repat</h1>
+        <div class="box">
+           
+        </div>
+    </div>
+</body>
+</html>

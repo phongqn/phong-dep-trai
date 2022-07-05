@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+</head>
+<body>
+    <!-- tác dụng:đối tượng hiển thị theo flex có độ tuỳ biến cao về 
+    thứ tự hiển thị,chiều ngang,chiều dọc, dùng để bố trí nội dung...
+    cú pháp: (display:flex;) mặc định nó là chiều ngang nếu ta chỉ viết display: flex;
+    và phải kèm theo flex-direction:row theo dạng chiều ngang 
+    flex-direction:column theo dạng cột
+    flex-direction:row-reverse dùng để hiển thị theo chiều ngang và thứ tự sẽ đảo ngược lại
+    và dịch sang phía bên phải -->
+    <style>
+        .container {
+            display: flex;
+           /* flex-direction: row;
+            flex-direction: column; */
+            flex-direction:row-reverse;
+        }
+        .box{
+            width: 100px;
+            padding:40px;
+            font-size:18px;
+            background-color:greenyellow; 
+            margin: 10px;
+        }
+    </style>
+    <h1>display flex</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>

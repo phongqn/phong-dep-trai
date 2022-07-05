@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài tập css-ex6</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #wrapper {
+        width: 960px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      #footer {
+        text-align: center;
+        color: red;
+      }
+      ul.list-product {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul.list-product li {
+        flex-basis: 33.33%;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+      }
+      ul.list-product li .product-item {
+        border: 1px solid #857171a2;
+        position: relative;
+        overflow: hidden;
+      }
+      ul.list-product li .product-item:hover {
+        border: 1px solid #ff8c00;
+      }
+      .price {
+        color: #ff8c00;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 30px;
+      }
+      .buy-now {
+        color: white;
+        font-size: 18px;
+        width: 100%;
+        display: block;
+        background-color: #ff8c00;
+        position: absolute;
+        bottom: -30px;
+      }
+      .product-name {
+        font-size: 20px;
+        color: black;
+      }
+      .sale {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .img:hover {
+        transform: rotate(1deg);
+      }
+      ul.list-product li .product-item:hover .buy-now {
+        bottom: 0px;
+        transition: all 1s;
+      }
+    </style>
+    <div id="wrapper">
+      <h1>bài tập hiển thị danh sách sản phẩm phần 2</h1>
+      <ul class="list-product">
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product1.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+            <span class="sale"><img src="img/sale.png" alt="" /> </span>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product2.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+            <span class="sale"><img src="img/sale.png" alt="" /> </span>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product3.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product4.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product1.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+          </div>
+        </li>
+        <li>
+          <div class="product-item">
+            <a href=""><img class="img" src="img/product2.jpg" alt="" /></a>
+            <div class="price">500.000đ</div>
+            <a href="" class="product-nam">Lorem ipsum dolor sit amet.</a>
+            <a href="" class="buy-now">Mua ngay</a>
+            <span class="sale"><img src="img/sale.png" alt="" /> </span>
+          </div>
+        </li>
+      </ul>
+      <div id="footer">unitop.vn</div>
+    </div>
+  </body>
+</html>

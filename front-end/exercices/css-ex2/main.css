@@ -1,0 +1,27 @@
+#wrapper{
+    width: 960px;
+    margin: auto;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    
+}
+#wrapper h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+#wrapper .font-weight-bold{
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+#wrapper .text-right{
+    text-align:right;
+    color:red;
+}
+#wrapper .text-line-through{
+    text-decoration: line-through;
+    color:black;
+}

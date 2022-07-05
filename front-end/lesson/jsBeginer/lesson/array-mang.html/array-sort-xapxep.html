@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sắp xếp phần tử trong mảng</title>
+  </head>
+  <body>
+    <h1>sắp xếp phần tử trong mảng</h1>
+    <script>
+      let my_array = ["a", "h", "k", "b", "e", "c"];
+      let list_number = [2, 5, 4, 114, 6, 8];
+      let my_result = my_array.sort(); // sắp xếp các phần tử  trong mảng bằng sort theo thứ tự alphabet
+      console.log(my_result);
+      let my_result1 = list_number.sort(function (a, b) {
+        return a - b; // sắp xếp tăng dần
+        // return b - a; // sắp xếp giảm dần
+      });
+      console.log(my_result1); // sắp xếp tăng dần các phần tử số trong mảng
+      //   console.log(my_result1.reverse());
+    </script>
+  </body>
+</html>

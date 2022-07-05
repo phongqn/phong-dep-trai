@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Attr-Selector theo thuộc tính</title>
+</head>
+<body>
+    <!-- tác dụng chọn tất cả các phần tử với điều kiện theo thuộc tính 
+    Selector[attr]{}
+    Selector[attr = "value"]{}
+    Selector[attr *= "value"]{}
+    Selector[attr ^= "value"]{}
+    Selector[attr $="value"]{} -->
+    <style>
+        a[href]{
+            color:cyan;
+        }
+        a[href *="unitop"]{
+            color:rgb(89, 19, 180);
+        }
+    </style>
+    <h1>Selector theo thuộc tính</h1>
+    <a href="http://unitop.vn">Php master</a> <br>
+    <a href="https://vnexpress.net/">Bootstrap AZ </a>
+     <!-- vì trang web sẽ có unitop.com,hay unitop.vn hay nhiều kiểu khác nhau nên khai báo cú pháp*=nếu chỉ cần unitop -->
+    <!-- nếu muốn các phần tử có đuôi là tên miền .vn thì ta sẽ dùng cú pháp $[href]$="vn" là được -->
+</body>
+</html>

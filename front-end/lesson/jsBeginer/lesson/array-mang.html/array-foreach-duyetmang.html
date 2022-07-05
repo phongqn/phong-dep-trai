@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duyệt mảng bằng foreach trong js</title>
+  </head>
+  <body>
+    <h1>Duyệt mảng và cập nhật giá trị bằng foreach trong js</h1>
+    <script>
+      let list_number = [1, 2, 3, 4, 8, 10];
+      let t = 0;
+      //# DUYỆT MẢNG
+      //  for (let x of list_number) {
+      //     t += x;
+      //   }
+      list_number.forEach(function (currentValue, index, arr) {
+        //   t += currentValue;
+        //     document.write(index + ":" + currentValue + "<br>");
+        //   document.write("tổng =" + t);
+        //# CẬP NHẬT GIÁ TRỊ CỦA MẢNG
+        arr[index] = currentValue * 15;
+      });
+      console.log(list_number);
+
+      //#TÁCH RỜI HÀM TRONG JS
+      //   list_number.forEach(my_function);
+      //    function my_function(currentValue, index, arr){
+      //      arr[index] = currentValue * 15;
+      //     };
+    </script>
+  </body>
+</html>

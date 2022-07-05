@@ -1,0 +1,35 @@
+#wrapper{
+    width: 960px;
+    margin  :auto;    
+}
+#wrapper h1{
+    background-color: blue;
+}
+#wrapper h1:hover{
+    background-color:yellow;
+}
+#wrapper a{
+    color:red;
+    font-size: 20px;
+
+}
+#wrapper a:hover{
+    color: aqua;
+}
+#wrapper h2{
+    color: green;
+}
+#wrapper .title{
+    color: yellow;
+}
+#wrapper p{
+    font-size: 20px;
+    font-style: normal;
+}
+#wrapper span{
+    font-size: 20px;
+    font-style: normal;
+}
+#wrapper input+label{
+    color:red;
+}

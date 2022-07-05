@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm min max của mảng trong js</title>
+  </head>
+  <body>
+    <h1>Tìm min max của mảng trong js</h1>
+    <script>
+      let list_number = [2, 5, 4, 112, 6, 8];
+      //xắp xếp tăng dần
+      let result = list_number.sort(function (a, b) {
+        return a - b;
+      });
+      let min = result[0]; // khai bao phần tử nhỏ nhất
+      let max = result[result.length - 1]; // khai báo phần tử lớn nhất
+      console.log(result);  
+      console.log(min); 
+      console.log(max);
+    </script>
+  </body>
+</html>

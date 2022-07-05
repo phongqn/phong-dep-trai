@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform scale</title>
+</head>
+<body>
+    <!-- tác dụng:Thay đổi kích thước phần tử theo 1 tỉ lệ cho trước khi hover vào
+    cú pháp:transform:scale(value)
+    value:(2, 2),(1.1, 1.1)
+    cách viết gọn khi kết hợp với rotate
+    transform:rotate(180deg) scale(1.2, 1.2); -->
+    <style>
+        .box{
+         
+            border: 1px solid black;
+            height:100px;
+            width:200px;
+            background-color: tomato;
+            text-align: center;
+            margin-left: 300px;
+            transition: all 0.5s;
+            
+        }
+        .box:hover{
+            transform:rotate(180deg) scale(1.2, 1.2);
+            
+        }
+    </style>
+    <h1>Transform scale</h1>
+    <div class="box">box</div>
+</body>
+</html>

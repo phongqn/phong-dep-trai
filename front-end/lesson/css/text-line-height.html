@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Line Height</title>
+  </head>
+  <body>
+        <!-- tác dụng của thiết lập độ cao giữa những dòng của văn bản
+        giả sử site có font-size là 14px thì ta có
+        nếu sử dụng line-height là 1,5 thì ta có cách tính 14*1,5=21
+        thong thường line-height 1,2-1,5 -->
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:16px;
+        }
+      .box-1,
+      .box-2 {
+          width: 400px;
+          border: 1px solid red;
+          margin-bottom: 10px;
+      }
+      .box-1{
+          line-height:24px;
+      }
+    </style>
+    <h1>Text Line Height</h1>
+    <div class="box-1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+        explicabo nobis totam asperiores accusantium eveniet? Reprehenderit,
+        amet, architecto, itaque voluptatum id blanditiis cupiditate soluta
+        tenetur dignissimos delectus rerum nulla.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+        explicabo nobis totam asperiores accusantium eveniet? Reprehenderit,
+        amet, architecto, itaque voluptatum id blanditiis cupiditate soluta
+        tenetur dignissimos delectus rerum nulla.
+      </p>
+    </div>
+    <div class="box-2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+        explicabo nobis totam asperiores accusantium eveniet? Reprehenderit,
+        amet, architecto, itaque voluptatum id blanditiis cupiditate soluta
+        tenetur dignissimos delectus rerum nulla.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+        explicabo nobis totam asperiores accusantium eveniet? Reprehenderit,
+        amet, architecto, itaque voluptatum id blanditiis cupiditate soluta
+        tenetur dignissimos delectus rerum nulla.
+      </p>
+    </div>
+  </body>
+</html>

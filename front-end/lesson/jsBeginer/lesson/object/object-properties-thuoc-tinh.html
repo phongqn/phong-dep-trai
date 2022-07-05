@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thuộc tính của object</title>
+  </head>
+  <body>
+    <h1>Thuộc tính của object</h1>
+    <script>
+      let person = {
+        firstName: "Nguyễn Quốc",
+        lastName: "Phong",
+        age: 21,
+        gender: "male",
+      };
+      /*
+        1.truy xuất vào thuộc tính của Object
+        2.truy xuất vào thuộc tính qua vòng lặp
+        3.cập nhật giá trị thuộc tính của object
+        4. tạo thuộc tính mới cho object
+        5. Delete thuộc tính trong object
+        */
+      //1.Truy xuất vào thuộc tính của Object có 2 cách
+      console.log(person.firstName); // cách 1
+      console.log(person["firstName"]); // cách 2
+      // 2.truy xuất vào thuộc tính qua vòng lặp
+      for (x in person) {
+        console.log(x + ":" + person[x]);
+      }
+      //3.cập nhật giá trị thuộc tính của object
+      persion.age = 34;
+      console.log(person);
+      //4. tạo thuộc tính mới cho object
+      person.weight = 55;
+      console.log(person);
+      //5. Delete thuộc tính trong object
+      delete person.age;
+      console.log(person);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+  </head>
+  <body>
+      <!-- z-index là kĩ thuật xếp chồng nhiều khối lên nhau
+      tác dụng:khi 2 đối tượng chồng lên nhau,đối tượng nào có z-index lớn hơn sẽ nằm đè lên trên
+     ( cú pháp:z-index:value; )
+      hiện tại box-2 đang nổi trên box-1
+      muốn cho box-1 nổi trên box-2 thì ta cần phải cho giá trị z-index của box-1 lớn hơn z-index của box-2 
+      và mặc định z-index của box-2=0 và nếu muốn z-index của box-1 nổi trước box-2 thì cho giá trị =1
+      và ngược lại -->
+    <style>
+      .box-parent {
+        background-color: lemonchiffon;
+        height: 400px;
+        width: 600px;
+        position: relative;
+      }
+      .box-1,
+      .box-2 {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+      }
+      .box-1{
+          background-color:lightgreen;
+          top: 5px;
+          left: 100px;
+          z-index: 1;
+      }
+      .box-2{
+          background-color:tomato;
+          top: 30px;
+          left: 50px;
+          z-index: 3;
+      }
+    </style>
+    <h1>Z-index</h1>
+    <div class="box-parent">
+      <div class="box-1">Box 1</div>
+      <div class="box-2">Box 2</div>
+    </div>
+  </body>
+</html>

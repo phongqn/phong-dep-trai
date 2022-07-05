@@ -1,0 +1,77 @@
+/* dùng cho cả trang site để cả trang web kích thước khối không thay đổi khi sử dụng padding,border
+box-sizing: border-box */
+*{
+    box-sizing: border-box; 
+}
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+#footer{
+    text-align: center;
+    font-size: 20px;
+    color:red;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Thuộc tính list-style thiết lập kiểu cho một danh sách.
+Chú ý: thuộc tính list-style chỉ sử dụng được cho danh sách (những thành phần chứa <li>): <ol>, <ul>, <menu>
+display:flex dùng để các phần tử nằm cùng trên cùng hàng
+flex-wrap dùng để tự động xuống dòng khi mà hết dòng nó tự chạy xuống bên dưới
+justify-content dùng để căn chỉnh theo phía 2 cho áp sát vào và lấy không gian dư chia các phần tử
+ở giữa */
+ul.list-product{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* flex-basis: chia các khối nhỏ với nhau */
+ul.list-product li{
+    flex-basis: 33.33%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    
+}
+/* không gian nó chiếm không di chuyển, 
+vị trí hiện tại của nó sẽ khiến đổi bố cục xung quanh vị trí đó không thay đổi…
+position: relative giống như nhân vật có khả năng di chuyển tự do, 
+nhưng luôn luôn liên quan đến nơi ban đầu. và dùng cho thằng cha */
+ul.list-product li .product-item{
+    border: 1px solid #857171a2;
+    position: relative;
+    
+}
+ul.list-product li .product-item:hover{ 
+    border: 1px solid #FF8C00;
+    
+}
+.price{
+    color: #FF8C00;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+a{
+    text-decoration: none;
+    font-size:18px;
+    line-height:30px;
+}
+.buy-now{
+    color: hotpink;
+    font-size: 18px;
+}
+.product-name{
+    font-size:  20px;
+    color: black;
+}
+/* trong CSS có tác dụng giúp định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt. Cụ thể hơn, thuộc tính absolute xác định định tọa độ của thành phần theo một thẻ cha relative (nếu có), Nếu không có thẻ cha thì nó sẽ đi theo body của toàn trang web. Cách sử dụng cũng tương tự như relative. */
+.discount{
+    position:absolute;
+    top: 0;
+    right: 0;
+}

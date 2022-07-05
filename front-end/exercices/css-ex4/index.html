@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-ex4</title>
+  </head>
+  <body>
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0 auto;
+      }
+      #header {
+        background-color: rgb(66, 122, 226);
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        padding: 15px;
+      }
+      #footer {
+        background-color: rgb(66, 122, 226);
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+      }
+      #wp-content{
+        display: flex;
+        flex-direction: row;
+        min-height: 600px;
+        flex-basis: auto;
+      }
+     #content{
+        background-color: #f3f3f3;
+        min-height: 600px;
+        flex: 1 2 600px;
+        justify-content:start;
+
+      }
+       #sidebar{
+        background-color: rgb(224, 224, 233);
+        min-height: 600px;
+        flex: 2 1 300px;
+        justify-content:end; 
+      }
+    </style>
+    <div id="wrapper">
+      <div id="header">Layout Web 2 cột-flex CSS</div>
+      <div id="wp-content">
+        <div id="content">Content</div>
+        <div id="sidebar">Sidebar</div>
+      </div>
+      <div id="footer">unitop.vn</div>
+    </div>
+  </body>
+</html>

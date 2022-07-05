@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Border</title>
+</head>
+<body>
+    <!-- cấu trúc: width style color;
+        border-{side}:width style color;
+    tác dụng:thiết lập đường viền cho khối
+    border-top: 1px solid #f00;  là ở phía trên, solid là nét liền
+    border-right: 2px dashed blue; là phía bên phải,dashed là nét đứt
+    border-bottom: 2px dotted yellow; là phía dưới,dotted là nét chấm chấm
+    cách viết rút gọn là border: 1px solid #f00;  -->
+    <style>
+        .box{
+            width: 400px;
+         /*   border: 1px solid #f00; */
+            padding: 15px;  
+            border: 1px solid #a28c8c33;
+            margin-bottom: 20px;
+        }
+        .box:hover{
+            border: 1px solid #333;
+        }
+    </style>
+    <h1>Border</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat eius, sed accusantium sapiente quaerat corrupti saepe temporibus? Asperiores, veritatis ex nostrum tempore iure quasi itaque suscipit consequuntur eum consectetur?</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat eius, sed accusantium sapiente quaerat corrupti saepe temporibus? Asperiores, veritatis ex nostrum tempore iure quasi itaque suscipit consequuntur eum consectetur?</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat eius, sed accusantium sapiente quaerat corrupti saepe temporibus? Asperiores, veritatis ex nostrum tempore iure quasi itaque suscipit consequuntur eum consectetur?</p>
+    </div>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat eius, sed accusantium sapiente quaerat corrupti saepe temporibus? Asperiores, veritatis ex nostrum tempore iure quasi itaque suscipit consequuntur eum consectetur?</p>
+    </div>
+</body>
+</html>

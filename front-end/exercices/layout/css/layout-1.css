@@ -1,0 +1,26 @@
+body{
+    font-size:15px;
+    line-height:1.15;
+}
+#wrapper{
+    width:960px;
+    margin: 0 auto;
+}
+#header{
+    background-color: #ff6348;
+    text-transform: uppercase;
+    color: #fff;
+    padding:15px 0px;
+}
+#wp-content{
+    background-color:#f1f2f6;
+    width:960px;
+    min-height:600px;
+    display: block;
+    padding: 15px;
+}
+#footer{
+    background-color:black;
+    color: #fff;
+    padding:10px;
+}

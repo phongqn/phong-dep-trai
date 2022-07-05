@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition css</title>
+</head>
+<body>
+    <!-- tác dụng:giúp làm chậm quá trình thay đổi giá trị thuộc tính của một đối tượng html
+    cú pháp transition:property
+    property:width,height,color,background...
+    muốn tất cả các hiệu ứng cùng biến đổi và phải cùng thời gian  khi hover vào thì ta có cú pháp viết nhanh là
+    transition:all 1s; -->
+    <style>
+        .box{
+            width: 200px;
+            padding: 50px;
+            background-color: tomato;
+            text-align: center;
+            text-transform: uppercase; 
+            transition:width 1s, background-color 0.4s ;
+        }
+        .box:hover{
+            width: 400px;
+            border: 1px solid;
+            
+            background-color: yellow;
+        }
+    </style>
+    <h1>Transition css</h1>
+    <div class="box">
+        box
+    </div>
+</body>
+</html>

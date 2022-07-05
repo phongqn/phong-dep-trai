@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phương thức trong object</title>
+  </head>
+  <body>
+    <h1>Phương thức trong object</h1>
+    <script>
+      //1. Định nghĩa 1 phưng thức trong object
+      //2.Toán tử this trong object
+      //3.Thêm một phương thức vào object
+      let number = {
+        a: 12,
+        b: 25,
+        // toán thử this trng object
+        sum: function () {
+          return this.a + this.b;
+        },
+      };
+      //3. thêm một phương thức vào object
+      number.minus = function () {
+        return this.a - this.b;
+      };
+      document.write(number.sum() + "<br>");
+      document.write(number.minus());
+    </script>
+  </body>
+</html>

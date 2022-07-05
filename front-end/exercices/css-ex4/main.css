@@ -1,0 +1,55 @@
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+  #header {
+    background-color: rgb(66, 122, 226);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+  }
+  #footer {
+    background-color: rgb(66, 122, 226);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+  }   
+
+
+  /* -------thiết lập khối flex---- */
+  /* 2 thuộc tính đầu tiên dùng để thiết lập chiều ngang
+  dùng để hiển thị cả khối to wp-content là chiều ngang và phải thêm
+  cả flex-direction: row; để có tác dụng */
+  /* thuộc tính min-height dùng để thiết lập độ cao tối thiểu của khối wp-content
+  thuộc tính flex-basis:auto; dùng để set độ rộng hoặc chiều cao cho phần tử. để  auto là dựa vàoo phần tử con nữa */
+  #wp-content{                      
+    display: flex;                                                       
+    flex-direction: row;             
+    min-height: 600px;
+    flex-basis: auto;
+  }
+
+
+  /* -----thiết lập khối trong content---- */
+  /* min-height dùng để thiết lập độ cao bằng với độ cao của khối wp-content
+  flex: grow shrink basis;
+  flex: 1 2 600px;
+  flex grow dùng để sử dụng khoảng trống còn lại của khối wp-content
+  flex shrink dùng để co lại khi thay đổi kích thước của khối wp-content
+  flex basis dùng để thiết lập kích thước của khối to là  khối wrapper */
+
+ #content{
+    background-color: #f3f3f3;
+    min-height: 600px;
+    flex: 1 2 600px;
+    justify-content:start;
+    /* tương  tự như khối content */
+  }
+   #sidebar{
+    background-color: rgb(224, 224, 233);
+    min-height: 600px;
+    flex: 2 1 360px;
+    justify-content:end; 
+  }

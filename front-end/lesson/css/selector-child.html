@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Selector</title>
+  </head>
+  <body>
+    <style>
+      /*ul li:first-child {
+        font-weight: bold;
+        color: red;
+      }
+      ul li:last-child {
+        font-weight: bold;
+        color: blue;
+      }*/
+       ul li:nth-child(odd){       /* tác động đến chỉ số chẵn là ntn-child(odd) */
+          font-weight: bold;
+          color: green;        
+      }
+      ul li:nth-child(even){        /* tác động đến chỉ số lẻ là ntn-child(even)
+                                       tác động đến chỉ phần tử bât kì nào đấy                                          */
+        font-weight: bold;
+        color: yellow;        
+    }
+    </style>
+    <h1>Child Selector</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+      <li>Item 6</li>
+      <li>Item 7</li>
+      <li>Item 8</li>
+    </ul>
+  </body>
+</html>

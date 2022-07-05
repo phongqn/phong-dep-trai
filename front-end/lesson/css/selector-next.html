@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector next</title>
+</head>
+<body>
+    <!-- tác dụng:chọn ra tất cả các phần tử Selector2 theo sau Selector1 để style -->
+    <!-- cú pháp selector1 ~ selector2{} -->
+    <style>
+        img{
+            max-width: 500px;
+            height: auto;
+        }
+        h2 ~p.hightlight{
+            color: red;
+        }
+    </style>
+    <h2> Selector next</h2>
+    <p>Pargarap 1</p>
+    <img src="images/cr7.jpg" alt="">
+    <p class="hightlight">Parapap 2</p>
+    <p>Parapap 3</p>
+</body>
+</html>

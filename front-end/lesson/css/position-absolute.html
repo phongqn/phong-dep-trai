@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Absolute</title>
+  </head>
+  <body>
+    <!-- tác dụng:thuộc tính position absolute giúp một khối trôi nổi trên một
+    cha bao quanh nó khi kết hợp với thuộc tính phụ top,left,right,bottom
+    position:absolute;
+    top:value;
+    right:value;
+    bottom:value;
+    left:value;
+    để mà child trôi nổi trên khối cha thì phải khai báo thằng cha của nó là
+    position:relative; -->
+    <style>
+      .box-parent {
+        background-color: wheat;
+        height: 350px;
+        width: 350px;
+        position: relative;
+      }
+      .box-children {
+        position: absolute;
+        background-color: tomato;
+        padding: 20px;
+        color: #fff;
+        top: 8px;
+        right: 10px;
+      }
+    </style>
+    <h1>Position Absolute</h1>
+    <div class="box-parent">
+      <div class="box-children">Child</div>
+    </div>
+  </body>
+</html>

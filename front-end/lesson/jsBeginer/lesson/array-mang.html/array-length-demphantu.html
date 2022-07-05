@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm số phần tử của mảng</title>
+  </head>
+  <body>
+    <h1>Đếm số phần tử của mảng</h1>
+    <script> 
+      //=============Đếm số phần tử trong mảng=======
+      let my_array = ["Phong", "Phong", "Nguyên"]; // mảng chứa chuỗi
+      // console.log(my_array.length);
+      let list_even = [2, 8, 16, 22]; // mảng chứa số
+      //     document.write(list_even.length);
+      let list_number = [
+        [2, 8, 16, 22],
+        [5, 3, 9, 13],
+      ]; // đưa mảng con  vào trong mảng
+    //  document.write(list_number[0].length); // list_number[0] đếm những phẩn tử con trong mảng
+      let list_users = [
+        { name: "Nguyễn Quốc Phong", age: 21, gender: "male" },
+        { name: "Hồ Văn Nguyên", age: 21, gender: "male" },
+        { name: "Trần Thị Quỳnh Chi", age: 20, gender: "female" },
+      ]; // có mảng bên trong là một object
+      document.write(list_users.length);
+      console.log(list_number);
+    </script>
+  </body>
+</html>

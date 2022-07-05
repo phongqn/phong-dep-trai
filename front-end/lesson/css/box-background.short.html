@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background position</title>
+</head>
+<body>
+    <!-- Tác dụng:viết thuộc tính background một cách ngắn gọn
+    cách viết rút gọn background:
+    background:color img repeat position;
+    ví dụ:
+    backgroud:blue url("images/facebook.png") no repeat center 20px; 
+    background-size:80px; vãn sẽ ở bên ngoài không viết ngắn gọn        -->
+
+    <style>
+        #wrapper{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .box{
+            background-color:cornsilk;
+            min-height:300px ;
+           /* background-image: url("images/facebook.png");
+            background-size:80px;
+            background-repeat:no-repeat;
+            background-position: center 20px; */
+            background:cornsilk url("images/facebook.png") no-repeat center 20px;
+            background-size:80px;
+        }
+    </style>
+    
+    <div id="wrapper">
+        <h1>Background short</h1>
+        <div class="box">
+           
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

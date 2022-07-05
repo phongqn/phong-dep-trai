@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex shorthand</title>
+</head>
+<body>
+    <!-- tác dụng:thộc tính flex được viết rút gọn 3 thuộc tính
+    flex-grow,flex-shrink,flex-basis
+    cú pháp:
+    flex:grow shrink basis;
+    flex:1 1 auto;
+    flex:1 1 200px;
+    flex:200px;
+    flex:auto; -->
+    <style> 
+        .container {
+            background-color: blanchedalmond;
+            display: flex;
+           /* flex-wrap: wrap; */
+        }
+        .flex-item{
+            background-color:tomato;
+            padding: 30px;
+            width: 100px;
+            margin:10px;
+            font-size:18px;
+            text-align: center;
+            color: #fff;
+            flex:1 1 200px;
+
+        }
+    </style>
+    <h1>Display flex shorthand</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+    </div>
+</body>
+</html>

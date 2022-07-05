@@ -1,0 +1,36 @@
+#header{
+    background-color: #ff6348;
+    color:#fff;
+    text-transform: uppercase;
+    padding:15px;
+}
+#footer{
+    background-color: black;
+    color:#fff;
+    padding:10px;
+}
+#wp-content{
+    display:flex;
+    min-height: 600px;
+}
+#content{
+    flex-basis: 60%;
+    background-color:#f1f2f6;
+    padding: 15px;
+    order:2;
+    
+}
+#sidebar-left{
+    flex-basis: 20%;
+    background-color:#dfe4ea;
+    padding: 15px;
+    order:1;
+    
+}
+#sidebar-right{
+    flex-basis: 20%;
+    background-color:#dfe4ea;
+    padding: 15px;
+    order:3;
+    
+}

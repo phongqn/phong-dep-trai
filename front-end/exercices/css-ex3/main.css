@@ -1,0 +1,35 @@
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+    
+}
+#header{
+    padding:15px;                       
+    color:white;
+    background-color:green;
+   text-align: center;                /*   căn chữ ở giữa */
+    
+}
+#footer{
+    padding: 10px 0px;
+    color:white;
+    background-color:green;
+    text-align: center;
+}
+#content{
+    width: 600px;
+    min-height: 600px;
+    background-color:#f3f3f3;
+    float: left;
+    box-sizing: border-box;                    
+    padding: 15px;
+}
+#sidebar{
+    width:360px;
+    min-height: 600px;
+    background-color:rgb(224, 224, 233);
+    float:left;
+    box-sizing: border-box;
+    padding: 15px;
+    
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm và xoá phần tử ra khỏi mảng</title>
+  </head>
+  <body>
+    <h1>thêm và xoá phần tử ra khỏi mảng</h1>
+    <script>
+      //===========Thêm phần tử vào mảng=========
+      //  let list_users = ["cương", "tuan", "phong"];
+      //  list_users.push("Hằng"); // thêm 1 phần tử  vào cuối mảng
+      //   list_users.unshift("Nguyên"); // thêm 1 phẩn tử vào đầu mảng
+      //  console.log(list_users);
+
+      // tạo ra một mảng các số chẵn sau đó đưa tất cả các số chãn vào một mảng con
+      //   let list_number = [2, 3, 4, 5, 6, 77, 88, 99, 123, 345, 666, 26];
+      //  let list_even = [];
+      //      for (let value of list_number) {
+      //     if (value % 2 == 0) {
+      //    list_even.push(value); // nếu nó chia hết cho 2 thì ta đưa vào list_even
+      //    }
+      //    }
+      //================Xoá phần tử vào mảng==============
+      let list_users = ["cương", "tuan", "phong"];
+      list_users.shift(); // xoá phần tử cương
+      list_users.pop(); // xoá phần tử phong
+      console.log(list_users);
+    </script>
+  </body>
+</html>

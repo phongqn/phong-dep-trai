@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Hidden</title>
+</head>
+<body>
+    <h1>Input Hidden</h1>
+    <form action="">
+        <label for="username">Tên đăng nhập</label> <br>
+        <!-- Thẻ label dùng để định nghĩa nhãn cho các thẻ input trong HTML -->
+        <input type="text" name="username" placeholder="Tên login" value="" id="username"> <br> 
+        <!--vlaue dùng để mặc định luôn text trong input -->
+        <label for="password">Mật khẩu</label> <br>
+       <input type="password" name="password" placeholder="mật khẩu" id="password">  
+       <!--placeholder dùng để tạo ra đoạn text chú thích nằm trong input -->
+       <input type="hidden" name="redirect-to" value="http://unitop.vn">
+       <!-- hidden dùng để lưu trữ thông tin ngầm không cho người dùng nhập vào  -->
+       </form>
+</body>
+</html>

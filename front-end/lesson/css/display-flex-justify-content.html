@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex wrap</title>
+</head>
+<body>
+    <!-- tác dụng:căn chỉnh hiển thị nội dung bên trong của khối display flex
+    cú pháp:justify-content: value
+    value:center,flex-start,flex-end,space-around,space-between
+    justify-content:center; là tất cả phần tử sẽ được căn giữa 
+    justify-content:flex-start; cho tất cả mọi thứ sang tay trái
+    justify-content:flex-end; cho tất cả mọi thứ sang tay phải
+    justify-content:space-around; lấy những k gian dư và chia đều cho các phần tử để lấp chỗ k gian dư ấy
+    justify-content:space-between; căn chỉnh theo phía 2 cho áp sát vào và lấy không gian dư chia các phần tử
+    ở giữa:::::và hay sữ dụng cái này nhất -->
+    <style>
+        .container {
+            width: 1170px;
+            background-color:gray;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           /* justify-content:center;
+            justify-content:flex-start;
+            justify-content:flex-end;
+            justify-content:space-around; */
+            justify-content:space-between;
+        }
+        .box{
+            text-align: center;
+            width: 100px;
+            padding:40px;
+            font-size:18px;
+            background-color:greenyellow; 
+            margin: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <h1>display flex wrap</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+#header{
+    background-color: #ff6348;
+    color:white;
+    text-transform: uppercase;
+    padding:15px;
+}
+#footer{
+    background-color: black;
+    color:white;
+    padding:5px;
+}
+#wp-content{ 
+    min-height: 600px;
+    padding:10px;
+    background-color: aliceblue;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Selector</title>
+  </head>
+  <body>
+      <!-- padding là vùng đệm
+      background là hình nền
+      width là độ rộng
+      margin-bottom là khoảng cách giữa đối tượng này với đối tượng kia 
+      cursor: pointer là thay đôi con trỏ chuột thành bàn tay 
+       tác dụng là:khi chúng ta di chuyển con trỏ chuột vào phần tử nào thì phần tử ấy sẽ thay đổi cách mà chúng ta đã style
+        CÚ PHÁP LÀ:phần tử +đuôi là :hover  -->
+    <style>
+      .box {
+        padding: 30px;
+        background: green;
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      .box:hover{
+          background:yellow;
+          cursor: pointer;
+      }
+    </style>
+    <h1>Hover Selector</h1>
+    <div class="box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+  </body>
+</html>

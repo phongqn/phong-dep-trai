@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dữ Liệu Bảng</title>
+</head>
+<body>
+    <h1>Hiển thị dữ liệu bảng </h1> 
+    <table border="1">                         <!--kẻ khung cho Bảng -->
+       <caption>Bảng giá điện thoại </caption>     <!--dùng để chú thích của tên bảng -->
+         <thead>                              <!--  dùng để xác định những dòng nào thuộc "phần đầu" của bảng. -->
+             <tr>                                <!--  được dùng để tạo một hàng trong bảng HTML. -->
+                <th rowspan="2">STT</th>            <!-- rowspan dùng để nhóm cột lại với nhau -->
+                <th colspan="2">sản phẩm</th>        <!-- rowspan dùng để nhóm hàng lại với nhau -->
+               
+             </tr>                                      <!--thẻ mở rộng: thead,tbody,tfoot -->
+            <tr>
+                <th>Tên</th>
+                <th> Gía</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Iphone 5</td>
+                <td>2.300.000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Iphone 6</td>
+                    <td>3.500.000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Iphone 5</td>
+                    <td>2.300.000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Iphone 6</td>
+                        <td>3.500.000</td>
+                    </tr>
+        </tbody>
+        <!-- <tfoot>                        =>> muốn có định dạng khác của dòng cuối cùng mới dùng tfoot
+            <tr>
+                <td>4</td>
+                <td>Iphone 6</td>
+                <td>3.500.000</td>
+            </tr>
+        </tfoot> -->
+    </table>
+
+    <!-- <table border="1">
+        <tr>
+            <td>#</td>
+            <td>Tên sản phẩm</td>
+            <td> Gía</td>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>Iphone 5</td>
+        <td>2.300.000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Iphone 6</td>
+            <td>3.500.000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Iphone 5</td>
+            <td>2.300.000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Iphone 6</td>
+                <td>3.500.000</td>
+            </tr>
+    </table> -->
+</body>
+</html>

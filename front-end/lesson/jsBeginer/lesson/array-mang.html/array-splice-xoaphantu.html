@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xoá hoặc thêm phần tử vào mảng trong js</title>
+  </head>
+  <body>
+    <h1>Xoá hoặc thêm phần tử vào mảng trong js</h1>
+    <script>
+      let list_color = ["red", "green", "yellow", "black", "white"];
+      list_color.splice(2, 2, "gray", "blue"); // xoá tất cả phần tử sau 2(green), chúng ta muốn xoá bao nhiêu phần tử, ví dụ ta muốn xoá yellow và black thì ta cần thêm số 2 nữa vào sau số 2 ban đầu
+      //   list_color.splice(2, 2, 'gray'); là chèn gray vào những phần tử đã xoá
+      console.log(list_color);
+    </script>
+  </body>
+</html>

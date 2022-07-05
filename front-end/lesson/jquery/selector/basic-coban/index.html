@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Nhóm selector cơ bản</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        //1.thiết lập tất cả text màu đỏ
+        //   $("p").css("color", "red");
+        $("p").css({ color: "red", "text-align": "center" });
+        //2.thiết lập các box có css (width:200px, height:100px, margin:20px, border:1px solid #333)
+        $(".box").css({
+          width: "200px",
+          height: "100px",
+          margin: "20px",
+          border: "1px solid #333",
+        });
+        //3.Thiết lập box1 có background là black
+        $("#box1").css("background", "black");
+        $("#box2, #box3, p").css("background", "gold");
+      });
+    </script>
+    <h1>Nhóm selector cơ bản</h1>
+    <div id="box1" class="box">
+      <p>Nội dung khối 1</p>
+    </div>
+    <div id="box2" class="box">
+      <p>Nội dung khối 2</p>
+    </div>
+    <div id="box3" class="box">
+      <p>Nội dung khối 3</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class clearfix</title>
+  </head>
+  <body>
+    <!-- tác dụng chống sập độ cao 
+    .clearfix::after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+    }
+    .clearfix {
+      clear: both;
+      display: block;
+      và chúng ta thêm class clearfix vào khối bị sập độ cao -->
+    <style>
+        h1{
+            text-align: center;
+        }
+      .box-parent {
+        width: 960px;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+      }
+      .box-left,
+      .box-right {
+        min-height: 600px;
+      }
+      .box-left {
+        width: 600px;
+        float: left;
+        background-color: burlywood;
+      }
+      .box-right {
+        width: 360px;
+        float: left;
+        background-color: cornflowerblue;
+      }
+      .clearfix::after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+      .clearfix {
+        clear: both;
+        display: block;
+      }
+    </style>
+    <!-- Cách 1 -->
+    <h1>Class clearfix</h1>
+    <div class="box-parent clearfix">
+      <div class="box-left">left</div>
+      <div class="box-right">right</div>
+    </div>
+    <!-- cách 2 -->
+    <!-- <h1>Class clearfix</h1>
+    <div class="box-parent">
+      <div class="box-left">left</div>
+      <div class="box-right">right</div>
+      <div class="clearfix"></div>
+    </div> -->
+  </body>
+</html>

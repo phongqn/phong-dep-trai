@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text decoration</title>
+</head>
+<body>
+    <!-- text-decoration: underline kiểu gạch chân bên dưới đi vào chung đường line
+    text-decoration-line:underline cũng là kiểu gạch chân bên dưới nhưng đi sâu vào kiểu đường line
+    text-decoration:line-through gạch chân ở giữa chữ
+    text-decoration:overline gạch ở đầu chữ
+   { khi mà ta muốn thêm màu sắc cho dòng gạch ta có thể viết theo cách rút gọn như:
+    (text-decoration:overline red;)
+    cũng có thể viết theo cách
+    text-decoration-line: line-through;
+    text-decoration-color: red;}
+     text-decoration-style:dashed kiểu nét gạch
+     text-decoration: dotted underline red; -> cách viết rút gọn nhất
+     thông thường chúng ta chỉ sử đụng line thôi ít khi sử dụng cả màu lẫn kiểu gach chân  -->
+    <style>
+    /*  p{
+            text-decoration-line:underline ;
+            text-decoration: underline;
+            text-decoration:line-through;
+            text-decoration:overline red; 
+            text-decoration-line: line-through;
+            text-decoration-color: red;
+            text-decoration-style:dashed; 
+            text-decoration: dotted underline red;
+        }
+    */
+    .text-underline{
+        text-decoration: underline;
+    }
+    .text-line-through{
+        text-decoration: line-through;
+    }
+    .text-overline{
+        text-decoration:overline ;
+    }
+    </style>
+    <h1>Text decoration</h1>
+    <p class="text-underline" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, iusto!</p> <br>
+    <p class="text-line-through" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, iusto!</p> <br>
+    <p class="text-overline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, iusto!</p>
+</body>
+</html>

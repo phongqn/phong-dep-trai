@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hàm gọi hàm trong js</title>
+  </head>
+  <body>
+    <h1>Hàm gọi hàm trong js</h1>
+    <script>
+      //tính tổng các số chẵn từ 1 đến n
+      function check_even(k) {
+        if (k % 2 == 0) return true;
+        return false;
+      }
+      function total_even(n) {
+        let t = 0;
+        for (let i = 1; i <= n; i++) {
+          if (check_even(i)) {
+            t += i;
+          }
+        }
+        return t;
+      }
+      document.write(total_even(2));
+    </script>
+  </body>
+</html>
